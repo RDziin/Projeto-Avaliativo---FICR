@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ================ GERAL ================ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #181818;
+}
+
+.container{
+    width: 1560px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ================ CABEÇALHO ================ */
+
+header{
+    background-color: black;
+    padding: 10px 0;
+    overflow: hidden;
+}
+
+
+
+header .logo{
+    width: 80px;
+}
+
+.lista-principal{
+    margin: 36px 0 0 0;
+    list-style: none;
+}
+
+.lista{
+    display: inline;
+    margin-right: 20px;
+}
+
+.lista:last-child{
+    margin: 0;
+}
+
+.lista a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all .3s ease-in-out;
+}
+
+.lista  a span{
+    color: #840000ff;
+    font-size: 14px;
+    display: inline-block;
+    transform: rotate(0deg);
+    transition: all .3s ease-in;
+}
+
+.lista:hover a span{
+    transform: rotate(-180deg);
+    transition: all .3s ease-in; 
+}
+
+.lista a:hover{
+    color: rgb(255, 46, 46);
+    transition: all .3s ease-in;
+}
+
+.submenu{
+    visibility: hidden;
+    position: absolute;
+    border-radius: 5px;
+    list-style: none;
+    border: solid 2px #fff;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-left: 60px;
+    transform: translateY(-10px);
+    opacity: 0;
+    transition: all .5s;
+}
+
+.submenu li{
+    margin: 10px 30px;
+}
+
+.bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #fff;
+    opacity: 20%;
+    z-index: -2000;
+}
+
+.lista:hover .submenu{
+    visibility: visible;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* ================ SEÇÃO 1 ================ */
+
+.figure-box{
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 20px 0 0;
+    transition: all .3s ease-in;
+}
+
+.figure-box figure{
+    width: 290px;
+    height: 390px;
+}
+
+.figure-box figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: all .3s ease-in;
+}
+
+.figure-box p{
+    margin-top: 20px;
+    width: 80%;
+    height: 100px;
+    font-size: 16px;
+    text-align: justify;
+    color: #fff;
+}
+
+.figure-box h2{
+    margin-top: 20px;
+}
+
+.figure-box a{
+    text-decoration: none;
+    color: #d52800ff;
+    transition: all .3s ease-in;
+}
+
+.figure-box:last-child{
+    margin: 50px 0 0 0;
+}
+
+.figure-box:hover{
+
+    && img{
+        scale: 1.05;
+        opacity: 35%;
+    }
+
+    && a{
+        color: #840000ff;
+    }
+}
