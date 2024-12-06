@@ -25,9 +25,15 @@ body {
 /* ================ CABEÇALHO ================ */
 
 header {
-  background-color: black;
+  width: 100%;
+  backdrop-filter: blur(3px);
   padding: 10px 0;
-  overflow: hidden;
+  position: fixed;
+  z-index: 2000;
+}
+
+main {
+  position: relative;
 }
 
 header .logo {
@@ -96,7 +102,7 @@ a:hover {
   height: 100%;
   position: absolute;
   background: #fff;
-  opacity: 20%;
+  opacity: 10%;
   z-index: -2000;
 }
 
@@ -114,7 +120,7 @@ a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 50px 50px 0 0;
+  margin: 150px 50px 0 0;
   transition: all 0.3s ease-in;
 }
 
@@ -150,7 +156,7 @@ a:hover {
 }
 
 .figure-box:last-child {
-  margin: 50px 0 0 0;
+  margin: 150px 0 0 0;
 }
 
 .figure-box:hover {
@@ -199,4 +205,165 @@ footer {
   scale: 1.1;
   opacity: 30%;
   transition: all 0.5s ease-in;
+}
+
+/* ============= Movie Box ============ */
+
+.movie-box {
+  margin: 150px 21px 0 0;
+  border-radius: 12px;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.5s ease-in;
+}
+
+.movie-box img {
+  width: 300px;
+  height: 300px;
+  border-radius: 12px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.movie-menu {
+  transition: all 0.5s ease-in;
+  visibility: hidden;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #000;
+  padding: 10px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.movie-menu ul {
+  display: inline-flex;
+  list-style: none;
+}
+
+.play {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  color: black;
+  font-size: 32px;
+  padding-left: 5px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.5s ease-in;
+}
+
+.play:hover {
+  transition: all 0.5s ease-in;
+  opacity: 40%;
+}
+
+.classification {
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 32px;
+  position: relative;
+  border: 1px solid #fff;
+}
+
+.Livre {
+  background-color: green;
+}
+
+.A10 {
+  background-color: aqua;
+}
+
+.A14 {
+  background-color: orange;
+}
+
+.A16 {
+  background-color: red;
+}
+
+.A18 {
+  background-color: #000;
+}
+
+.movie-box:hover {
+  scale: 1.1;
+  && .movie-menu {
+    visibility: visible;
+  }
+
+  && img {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+
+/* ============= Contato ============= */
+
+.contato {
+  width: 100%;
+  margin: 150px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contato form {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  && h1 {
+    font-size: 32px;
+  }
+
+  && label {
+    font-size: 24px;
+  }
+
+  && input {
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    width: 100%;
+    font-size: 18px;
+    padding: 2px 7px;
+  }
+
+  && textarea{
+    width: 100%;
+    background: none;
+    font-size: 18px;
+    padding: 2px 7px;
+  }
+
+  && .submit{
+    width: 100%;
+    border: 1px solid #fff;
+    transition: all .5s ease-in;
+  }
+
+  && .submit:hover{
+    background: #d52800ff;
+  }
 }

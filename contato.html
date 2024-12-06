@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/LogoMovie.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Filmes</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+
+            <h1><a href="index.html"><img src="images/LogoMovie.svg" alt="Logo" class="logo"></a></h1>
+
+            <nav>
+
+                <ul class="lista-principal">
+
+                    <li class="lista"><a href="index.html">Início</a></li>
+                    <li class="lista">
+                        <a href="#">Gêneros <span>▼</span></a>
+
+                        <ul class="submenu">
+
+                            <div class="bg"></div>
+                            <li><a href="#">Comédia</a></li>
+                            <hr>
+                            <li><a href="#">Terror</a></li>
+                            <hr>
+                            <li><a href="#">Suspense</a></li>
+                            <hr>
+                            <li><a href="#">Ação</a></li>
+                        </ul>
+                    </li>
+                    <li class="lista"><a href="contato.html">Fale Conosco</a></li>
+                    <li class="lista"><a href="sobre.html">Sobre</a></li>
+
+                </ul>
+
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="container">
+
+            <div class="contato">
+                <form action="contato.html" method="post">
+                    <h1>Preencha Seus Dados e Dê o Seu Feedback</h1>
+
+                    <div>
+                        <div>
+                            <label for="nome">Nome:</label><br>
+                            <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <label for="email">E-mail:</label><br>
+                            <input type="email" name="email" id="email" placeholder="Digite seu Email" required>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="assunto">Assunto:</label><br>
+                        <textarea id="assunto" placeholder="Digite seu comentário" rows="7" cols="40"></textarea>
+                    </div>
+
+                    <div>
+                        <input type="submit" value="Enviar" class="submit">
+                    </div>
+
+                </form>
+
+                <img src="images/LogoMovie.svg" width="500" height="800" alt="Logo">
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="container">
+            <div class="rodape">
+                <ul>
+                    <h1>Sobre</h1>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Seja Colaborador</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="#"><img src="images/instagram-brands-solid.svg" alt=""></a></li>
+                    <li><a href="#"><img src="images/linkedin-brands-solid.svg" alt=""></a></li>
+                    <li><a href="#"><img src="images/facebook-brands-solid.svg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Copyright &copy;</h3>
+    </footer>
+</body>
+
+</html>
