@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* ================ GERAL ================ */
 
@@ -15,7 +16,7 @@ body {
   background-color: #181818;
   display: flex;
   flex-direction: column;
-  gap: 200px  ;
+  gap: 200px;
 }
 
 .container {
@@ -25,7 +26,7 @@ body {
   justify-content: space-between;
 }
 
-.logo-page{
+.logo-page {
   width: 500px;
   height: 800px;
 }
@@ -36,7 +37,7 @@ header {
   backdrop-filter: blur(3px) brightness(20%);
   padding: 10px 0;
   position: fixed;
-  z-index: 2000;
+  z-index: 3000;
 }
 
 main {
@@ -214,20 +215,20 @@ footer {
 
 /* ============= Movie Box ============ */
 
-.movies{
+.movies {
   margin-top: 150px;
-  position: relative;
   display: flex;
   flex-direction: column;
   gap: 50px;
   text-align: end;
 
-  && h1{
+  && h1 {
     font-size: 60px;
   }
 }
 
 .movie-box {
+  position: relative;
   margin: 0 21px 0 0;
   border-radius: 12px;
   width: 300px;
@@ -237,6 +238,32 @@ footer {
   align-items: center;
   justify-content: space-between;
   transition: all 0.5s ease-in;
+}
+
+.top10 {
+  margin: 0 120px 0 0;
+  position: relative;
+
+  && .top10:last-child {
+    margin: 0;
+  }
+}
+
+.top10 span {
+  color: black;
+  -webkit-text-stroke: 10px rgb(145, 145, 145);
+  font-family: "Anton";
+  font-size: 400px;
+  position: absolute;
+  left: -120px;
+  top: -150px;
+  z-index: -200;
+  opacity: 40%;
+} 
+
+.n10 span{
+  font-size: 400px;
+  left: -130px;
 }
 
 .movie-box img {
@@ -249,6 +276,7 @@ footer {
 }
 
 .movie-menu {
+  z-index: 2000;
   transition: all 0.5s ease-in;
   visibility: hidden;
   position: relative;
@@ -268,7 +296,7 @@ footer {
   margin-bottom: 20px;
 }
 
-.movie-menu .row{
+.movie-menu .row {
   display: flex;
   justify-content: space-between;
 }
@@ -311,10 +339,10 @@ footer {
 }
 
 .A10 {
-  background-color: aqua;
+  background-color: rgb(47, 216, 216);
 }
 
-.A12{
+.A12 {
   background-color: rgb(255, 230, 0);
 }
 .A14 {
@@ -330,6 +358,7 @@ footer {
 }
 
 .movie-box:hover {
+  z-index: 2000;
   scale: 1.1;
   && .movie-menu {
     visibility: visible;
@@ -406,7 +435,7 @@ footer {
   justify-content: space-between;
   align-items: center;
 
-  && .text{
+  && .text {
     width: 850px;
   }
 }
